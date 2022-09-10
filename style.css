@@ -1,0 +1,213 @@
+body{
+    margin:0;
+
+}
+#todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("https://media4.giphy.com/media/GRSnxyhJnPsaQy9YLn/giphy.gif");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#inicio img{
+    width: 40vw;
+    height: 40vw;
+}
+#inicio button{
+    width: 6vw;
+    height: 6vw;
+    background-image: url("./Images/buu.png");
+    background-size: cover;
+    border-radius: 3vw;
+}
+.villanos{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-around;
+}
+.villanos button{
+    width: 40%;
+    height: 40%;
+    margin-top: 1%;
+}
+.canvas{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+#vegeta{
+    background-image: url("./Images/vegeta.png");
+    background-size: contain;
+}
+#cell{
+    background-image: url("./Images/cell.png");
+    visibility: hidden;
+    background-size: contain;
+}
+#buu{
+    background-image: url("./Images/buu.png");
+    visibility: hidden;
+    background-size: contain;
+}
+.disp{
+    display: none;
+    width: 40%;
+    height: 20%;
+    background-image: url("./Images/pop.png");
+    background-size: 100%;
+    background-position-y: 15%;
+    background-repeat: no-repeat;
+    margin-left: 30%;
+}
+.disp p {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 3vh;
+}
+.disp button{
+    margin-left: 47%;
+    width: 3vw;
+    height: 3vw;
+    background-image: url("./Images/button.png");
+    background-size: cover;
+    border-radius: 3vw;
+}
+.next_phase{
+    display: none;
+    width: 60%;
+    height: 20%;
+    background-image: url("./Images/pop.png");
+    background-size: 100%;
+    background-position-y: 15%;
+    background-repeat: no-repeat;
+    margin-left: 20%;
+}
+.next_phase p {
+    text-align: center;
+    margin-top: 5%;
+     font-size: 3vh;
+}
+.next_phase button{
+   margin-left: 47%;
+   width: 3vw;
+   height: 3vw;
+   background-image: url("./Images/button.png");
+   background-size: cover;
+   border-radius: 3vw;
+}
+.player1{
+    display: none;
+    width: 40%;
+    height: 20%;
+    background-image: url("./Images/pop.png");
+    background-size: 100%;
+    background-position-y: 15%;
+    background-repeat: no-repeat;
+    margin-left: 30%;
+}
+.player1 p {
+    text-align: center;
+    margin-top: 5%;
+     font-size: 3vh;
+}
+.player1 button{
+    margin-left: 47%;
+    width: 3vw;
+    height: 3vw;
+    background-image: url("./Images/button.png");
+    background-size: cover;
+    border-radius: 3vw;
+}
+.player2{
+    display: none;
+    width: 40%;
+    height: 20%;
+    background-image: url("./Images/pop.png");
+    background-size: 100%;
+    background-position-y: 15%;
+    background-repeat: no-repeat;
+    margin-left: 30%;
+}
+.player2 p {
+    text-align: center;
+    margin-top: 5%;
+     font-size: 3vh;
+}
+.player2 button{
+    margin-left: 47%;
+    width: 3vw;
+    height: 3vw;
+    background-image: url("./Images/button.png");
+    background-size: cover;
+    border-radius: 3vw;
+}
+#control2{
+    position: absolute;
+    height: 30%;
+    width: 15%;
+    margin-left: 74%;
+}
+#control2 img{
+    height: 100%;
+    width: 100%;
+}
+#control2 h3 {
+    text-align: center;
+    color: blue;
+    background-color: red;
+}
+#control1{
+    position: absolute;
+    height: 30%;
+    width: 15%;
+    margin-left: 10%;
+}
+#control1 img{
+    height: 100%;
+    width: 100%;
+}
+#control1 h3 {
+    text-align: center;
+    color: blue;
+    background-color: red;
+}
+#VS{
+    background-image: url("./Images/vs_button.png");
+    background-size: cover;
+}
+.win{
+    display: none;
+    width: 300;
+    height: 400;
+    background-image: url("./Images/pop.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 23%;
+}
+.win p{
+    margin-left: 5vh;
+    text-align: center;
+    margin-top: 100vh;
+    font-size: 4vh;
+}
+.win button{
+    margin-left: 40%;
+    width: 8vw;
+    height: 8vw;
+    background-image: url("./Images/button.png");
+    background-size: cover;
+    border-radius: 5vw;
+}
