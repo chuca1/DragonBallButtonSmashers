@@ -1,16 +1,16 @@
-function crearTelaraña(){
+function crearkiBueno(){
     if(disparo==true){
-        telarañas[0].x += 12;
-        telarañas[0].y -= 12;
-        telarañas2[0].x += 12;
-        telarañas2[0].y -= 12;
+        kiBuenos[0].x += 12;
+        kiBuenos[0].y -= 12;
+        kiBuenos2[0].x += 12;
+        kiBuenos2[0].y -= 12;
         disparo=false
     }
 }
 
 function piumpium(){
-    telarañas[0].draw();
-    telarañas2[0].draw();
+    kiBuenos[0].draw();
+    kiBuenos2[0].draw();
 } 
 
   function malo_malo(tipo){

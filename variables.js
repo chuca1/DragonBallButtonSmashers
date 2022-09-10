@@ -3,7 +3,7 @@ const context = canvas.getContext("2d")
 //clases
 
 const edificios = new Edificios()
-const spider = new Goku(edificios)
+const goku = new Goku(edificios)
 const vegeta_V= new Vegeta(edificios)
 const cell_V = new Cell(edificios)
 const buu_V = new Buu(edificios)
@@ -38,8 +38,8 @@ buu_V.width=0
 buu_V.height=0
 
 //variables
-let telarañas=[new Telaraña(spider)]
-let telarañas2=[new Telaraña2(vegeta_V)];
+let kiBuenos=[new kiBueno(goku)]
+let kiBuenos2=[new kiMalo(vegeta_V)];
 let disparo=false
 let animateHelper=0
 let interval
@@ -47,5 +47,5 @@ let frames = 0
 let taki_taki=0
 
 //unlocables
-let unlock_electro=false
-let unlock_kraven=false
+let unlock_cell=false
+let unlock_buu=false

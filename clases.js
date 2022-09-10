@@ -55,7 +55,7 @@ class Goku{
 
 }
 
-class Telaraña{
+class kiBueno{
     constructor(goku){
         this.x=canvas.width / 2 - 250;
         this.y=canvas.height/ 2 - 100;
@@ -68,7 +68,7 @@ class Telaraña{
         context.drawImage(this.img,this.x,this.y,this.width,this.width)
     }
 }
-class Telaraña2{
+class kiMalo{
     constructor(vegeta_V){
         this.x=canvas.width / 2 - 100;
         this.y=canvas.height/ 2 - 200;
@@ -83,7 +83,7 @@ class Telaraña2{
 }
  
 class Villanos{
-    constructor(imagen,telarañas){
+    constructor(imagen,kiBuenos){
         this.x=canvas.width - 200;
         this.y=-100
         this.img= new Image()
@@ -108,20 +108,20 @@ class Villanos{
 
 // classes of villanos
 class Vegeta extends Villanos{
-    constructor(imagen,telarañas){
-        super(imagen,telarañas)
+    constructor(imagen,kiBuenos){
+        super(imagen,kiBuenos)
         this.img.src="./Images/vegeta.png"
     }   
 }
 class Cell extends Villanos{
-    constructor(imagen,telarañas){
-        super(imagen,telarañas)
+    constructor(imagen,kiBuenos){
+        super(imagen,kiBuenos)
         this.img.src="./Images/cell.png"
     }
 }
 class Buu extends Villanos{
-    constructor(imagen,telarañas){
-        super(imagen,telarañas)
+    constructor(imagen,kiBuenos){
+        super(imagen,kiBuenos)
         this.img.src="./Images/buu.png"
     }
 }

@@ -1,10 +1,12 @@
+//Nivel de vegeta
+
 vegeta_button.onclick=(e)=> {
     menu_villanos.style.display="none"
     canvas_C.style.display="flex"
-    telarañas[0].x=canvas.width / 2 - 250;
-    telarañas[0].y=canvas.height/ 2 - 100;
-    telarañas2[0].x=canvas.width / 2 - 100;
-    telarañas2[0].y=canvas.height/ 2 - 200;
+    kiBuenos[0].x=canvas.width / 2 - 250;
+    kiBuenos[0].y=canvas.height/ 2 - 100;
+    kiBuenos2[0].x=canvas.width / 2 - 100;
+    kiBuenos2[0].y=canvas.height/ 2 - 200;
     buu_V.width = 0;
     buu_V.height = 0;
     cell_V.width = 0;
@@ -17,28 +19,29 @@ vegeta_button.onclick=(e)=> {
     frames++;
     context.clearRect(0, 0, canvas.width, canvas.height);
     edificios.draw()
-    spider.draw();
+    goku.draw();
     vegeta_V.draw();
-    crearTelaraña();
+    crearkiBueno();
     piumpium();
 
     if(frames% 15==0){
-        telarañas[0].x -= 5;
-        telarañas[0].y += 5;
-        telarañas2[0].x -= 5;
-        telarañas2[0].y += 5;
+        kiBuenos[0].x -= 5;
+        kiBuenos[0].y += 5;
+        kiBuenos2[0].x -= 5;
+        kiBuenos2[0].y += 5;
     }
-    if(spider.isTouching(telarañas[0])){
+    if(goku.isTouching(kiBuenos[0])){
         clearInterval(interval)
         game_O.style.display="initial"
         game_O.style.position="absolute"
     }
 
-    if(vegeta_V.isTouching(telarañas2[0])) {
+    if(vegeta_V.isTouching(kiBuenos2[0])) {
         clearInterval(interval)
         you_W.style.display="initial"
         you_W.style.position="absolute";
-        unlock_electro=true;
+        //Desbloquear siguiente nivel
+        unlock_cell=true;
     }
   }
   function startGame() {
@@ -47,14 +50,17 @@ vegeta_button.onclick=(e)=> {
 
 }
 
+//Nivel de cell
+
+
 cell_button.onclick=(e)=> {
     menu_villanos.style.display="none"
     canvas_C.style.display="flex"
-    unlock_kraven=malo_malo(cell_V)
-    telarañas[0].x=canvas.width / 2 - 250;
-    telarañas[0].y=canvas.height/ 2 - 100;
-    telarañas2[0].x=canvas.width / 2 - 100;
-    telarañas2[0].y=canvas.height/ 2 - 200;
+    unlock_buu=malo_malo(cell_V)
+    kiBuenos[0].x=canvas.width / 2 - 250;
+    kiBuenos[0].y=canvas.height/ 2 - 100;
+    kiBuenos2[0].x=canvas.width / 2 - 100;
+    kiBuenos2[0].y=canvas.height/ 2 - 200;
     buu_V.width = 0;
     buu_V.height = 0;
     vegeta_V.width = 0;
@@ -67,28 +73,28 @@ cell_button.onclick=(e)=> {
     frames++;
     context.clearRect(0, 0, canvas.width, canvas.height);
     edificios.draw()
-    spider.draw();
+    goku.draw();
     cell_V.draw();
-    crearTelaraña();
+    crearkiBueno();
     piumpium();
 
     if(frames% 10==0){
-        telarañas[0].x -= 5;
-        telarañas[0].y += 5;
-        telarañas2[0].x -= 5;
-        telarañas2[0].y += 5;
+        kiBuenos[0].x -= 5;
+        kiBuenos[0].y += 5;
+        kiBuenos2[0].x -= 5;
+        kiBuenos2[0].y += 5;
     }
-    if(spider.isTouching(telarañas[0])){
+    if(goku.isTouching(kiBuenos[0])){
         clearInterval(interval)
         game_O.style.display="initial"
         game_O.style.position="absolute"
     }
 
-    if(vegeta_V.isTouching(telarañas2[0])) {
+    if(vegeta_V.isTouching(kiBuenos2[0])) {
         clearInterval(interval)
         you_W.style.display="initial"
         you_W.style.position="absolute";
-        unlock_kraven = true;
+        unlock_buu = true;
     }
   }
   function startGame() {
@@ -97,11 +103,12 @@ cell_button.onclick=(e)=> {
 
 }
 
+//Nivel de buu
 
 buu_button.onclick=(e)=> {
     menu_villanos.style.display="none"
     canvas_C.style.display="flex"
-    unlock_kraven=malo_malo(buu_V)
+    unlock_buu=malo_malo(buu_V)
     buu_V.x -= 10;
     buu_V.width -= 60;
     buu_V.height -= 60;
@@ -109,10 +116,10 @@ buu_button.onclick=(e)=> {
     cell_V.height = 0;
     vegeta_V.width = 0;
     vegeta_V.height = 0;
-    telarañas[0].x=canvas.width / 2 - 250;
-    telarañas[0].y=canvas.height/ 2 - 100;
-    telarañas2[0].x=canvas.width / 2 - 100;
-    telarañas2[0].y=canvas.height/ 2 - 200;
+    kiBuenos[0].x=canvas.width / 2 - 250;
+    kiBuenos[0].y=canvas.height/ 2 - 100;
+    kiBuenos2[0].x=canvas.width / 2 - 100;
+    kiBuenos2[0].y=canvas.height/ 2 - 200;
     startGame();
  
 
@@ -120,24 +127,24 @@ buu_button.onclick=(e)=> {
     frames++;
     context.clearRect(0, 0, canvas.width, canvas.height);
     edificios.draw()
-    spider.draw();
+    goku.draw();
     buu_V.draw();
-    crearTelaraña();
+    crearkiBueno();
     piumpium();
 
     if(frames% 7==0){
-        telarañas[0].x -= 5;
-        telarañas[0].y += 5;
-        telarañas2[0].x -= 5;
-        telarañas2[0].y += 5;
+        kiBuenos[0].x -= 5;
+        kiBuenos[0].y += 5;
+        kiBuenos2[0].x -= 5;
+        kiBuenos2[0].y += 5;
     }
-    if(spider.isTouching(telarañas[0])){
+    if(goku.isTouching(kiBuenos[0])){
         clearInterval(interval)
         game_O.style.display="initial"
         game_O.style.position="absolute"
     }
 
-    if(vegeta_V.isTouching(telarañas2[0])) {
+    if(vegeta_V.isTouching(kiBuenos2[0])) {
         clearInterval(interval)
         win.style.display="initial"
         winb.style.position="absolute";
