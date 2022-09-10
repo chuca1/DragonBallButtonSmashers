@@ -43,31 +43,6 @@ go.onclick=(e)=>{
     game_O.style.display="none"
    
 }
-go1.onclick=(e)=>{
-    if(unlock_electro==true){
-        cell_button.style.visibility="visible"
-    }
-    menu_villanos.style.display="flex"
-    canvas_C.style.display="none"
-    you_W.style.display="none"
-    edificios.y=-canvas.height
-    player1.style.display="none"
-    player2.style.display="none"
-    game_O.style.display="none"
-   
-}
-
-go2.onclick=(e)=>{
-    if(unlock_electro==true){
-        cell_button.style.visibility="visible"
-    }
-    menu_villanos.style.display="flex"
-    canvas_C.style.display="none"
-    edificios.y=-canvas.height
-    player1.style.display="none"
-    player2.style.display="none"
-    game_O.style.display="none"
-}
 
 winb.onclick=(e)=>{
     if(unlock_electro==true){
